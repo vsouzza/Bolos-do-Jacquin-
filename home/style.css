@@ -28,6 +28,10 @@ h1 {
   margin: 0 auto;
 }
 
+.home_container img {
+  margin-top: 35px;
+}
+
 /* ------- BANNER ------- */
 .home_banner {
   background-color: #fdf8f8;
@@ -118,6 +122,7 @@ h1 {
   align-items: center;
   position: relative;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .home_subtitulo h2 {
@@ -133,7 +138,7 @@ h1 {
 .home_subtitulo span {
   font-size: 32px;
   position: absolute;
-  bottom: -10px;
+  margin-bottom: 10px;
 }
 
 .home_subtitulo hr {
@@ -143,4 +148,65 @@ h1 {
   margin-top: 5px;
   border: none;
   height: 2px;
+  /* margin-bottom: 100px; */
+}
+
+.container_categorias a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.img_categoria1 {
+  background-image: url(../img/bolos\ de\ festa.png);
+  /* width: 70%; */
+  width: 770px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 50px 20px;
+}
+
+.container_categorias {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.img_categoria1 span {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+}
+.home_produtos h3 {
+  font-family: "Libre Caslon Text", serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.img_categoria1 h3 {
+  font-size: 32px;
+}
+
+.col_categorias {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.img_categoria2 {
+  background-image: url(../img/bolos\ caseiros.png);
+}
+.img_categoria3 {
+  background-image: url(../img/tortas\ francesaspng.png);
+}
+
+.img_categoria2,
+.img_categoria3 {
+  /* width: 25%; */
+  width: 352px;
+  height: 283px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 10px;
+  font-size: 24px;
 }
