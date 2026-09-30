@@ -8,6 +8,7 @@
   --corPrincipal: #fff4f4;
   --fontHanken: "Hanken Grotesk", sans-serif;
   --corDourado: #c5a028;
+  --corSecundaria: #fdf8f8;
 }
 
 .container {
@@ -181,7 +182,7 @@ form label {
   text-transform: uppercase;
   color: #444444;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 5px;
 }
 
@@ -215,7 +216,7 @@ form label {
   border: solid 1px #444444;
 }
 
-.input_img label:hover{
+.input_img label:hover {
   cursor: pointer;
 }
 
@@ -223,37 +224,67 @@ form input[type="text"] {
   height: 26px;
 }
 
-form input[type=checkbox],
-form input[type=text]{
+form input[type="checkbox"],
+form input[type="text"] {
   height: 25px;
 }
 
-.input_cat input{
+.input_cat {
+  width: 79%;
+}
+
+.input_cat input {
   width: 314px;
   margin-right: 20px;
 }
 
-.input_valor{
+.input_valor {
   margin-right: 20px;
-  width: 360px;
+  max-width: 360px;
+  width: 91%;
 }
 
-form input[type=button]{
+form input[type="button"] {
   margin: 0 auto;
   display: block;
   background-color: #000;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
   font-family: var(--fontHanken);
   font-size: 12px;
-  padding: 10px 25px;
+  padding: 16px 55px;
   border: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+/* ---------- LISTA DE PRODUTOS ---------- */
+.list_produtos {
+  background-color: var(--corSecundaria);
+}
+
+table {
+  background-color: aqua;
+  width: 100%;
+  font-family: var(--fontHanken);
   text-transform: uppercase;
 }
 
 
+thead{
+  font-size: 12px;
+  font-weight: 600;
+  color: #444444;
+}
 
+tbody{
+  color: #aaaaaa;
+}
 
+table svg {
+  width: 35px;
+}
 
 /* ---------- MEDIA ---------- */
 
@@ -279,5 +310,16 @@ form input[type=button]{
   .box_h2 hr {
     margin-top: 0px; /* se deixar 10px, a linha vai muito para baixo */
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .inputs_form {
+    display: block;
+  }
+
+  .form_coluna1,
+  .form_coluna2 {
+    margin: 0 auto;
   }
 }
